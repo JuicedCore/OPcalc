@@ -3,13 +3,30 @@
     justify-content: center;    
 }
 .calculator-outer-box{
-    padding:20px;
+    padding:10px;
     background-clip: content-box;
     background-color: aqua;
-    box-shadow: inset 0 0 0 20px rgb(22, 198, 198);
+    box-shadow: inset 0 0 0 10px rgb(22, 198, 198);
 }
-.row-1{
+.other-than-screen{
     display: grid;
-    /* grid-template-columns:max-content; */
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(4,200);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+}
+#zero{
+    grid-column:1 / 3;
+}
+.screen{
+    outline: 2px black solid;
+    text-align: end;
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.calc{
+    background-color: yellowgreen;
+}
+.calc:hover{
+    background-color: purple;
 }
